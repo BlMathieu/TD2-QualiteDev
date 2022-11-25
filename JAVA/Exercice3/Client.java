@@ -10,7 +10,7 @@ public class Client {
         this.nom=nom;
         this.prenom=prenom;
         this.categorie=categorie;
-        this.carte=CarteFactory.createCarte(this);
+        this.carte= null;
     }
 
     public Boolean getCategorie() {
@@ -23,5 +23,12 @@ public class Client {
 
     public Carte getCarte(){
         return this.carte;
+    }
+
+    public void setCarteMasterCard(){
+        this.carte = AbstractCarteFactory.MasterCardFactory.getCarte(this);
+    }
+    public void setCarteVisa(){
+        this.carte = AbstractCarteFactory.VisaFactory.getCarte(this);
     }
 }
