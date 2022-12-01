@@ -2,7 +2,7 @@ package Exercice5;
 
 public class UsineBoeing extends Usine{
     @Override
-    public Avion fabriqueAvion(String modeleAvion, String marqueAvion) {
+    public AvionBoeing fabriqueAvion(String modeleAvion, String marqueAvion) {
         AvionBoeing avionBoeing = new AvionBoeing(modeleAvion,marqueAvion);
         return avionBoeing;
     }

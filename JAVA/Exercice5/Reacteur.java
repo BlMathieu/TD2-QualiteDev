@@ -11,4 +11,7 @@ public class Reacteur {
         this.poids = poids;
         this.poussee = poussee;
     }
+    public String toString(){
+        return "Reacteur : "+marque + " "+poids +" "+poussee;
+    }
 }

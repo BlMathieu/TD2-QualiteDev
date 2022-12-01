@@ -5,4 +5,8 @@ public abstract class Satellite {
     public Satellite(String modele){
         this.modele=modele;
     }
+
+    public String toString(){
+        return "Satellite : "+modele;
+    }
 }

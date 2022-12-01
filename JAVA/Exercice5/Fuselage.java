@@ -8,4 +8,8 @@ public class Fuselage  {
         this.poids = poids;
         this.capacite = capacite;
     }
+
+    public String toString(){
+        return "Fuselage : " + poids +" "+capacite;
+    }
 }

@@ -1,5 +1,6 @@
 package Exercice5;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Avion {
@@ -11,6 +12,7 @@ public class Avion {
     public Avion(String marque,String modele){
         this.marque=marque;
         this.modele=modele;
+        listReacteur = new ArrayList<>();
     }
 
     public void ajoutReacteur(Reacteur reacteur){
@@ -18,5 +20,10 @@ public class Avion {
     }
     public void ajoutFuselage(Fuselage fuselage){
         this.fuselage=fuselage;
+    }
+
+    public String toString(){
+        return "Avion : "+marque + " " + modele + "\n" + fuselage + "\n" + listReacteur;
+
     }
 }
